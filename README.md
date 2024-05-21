@@ -169,7 +169,7 @@ medial.getPosts(0, 20, 'trending').then(posts => {
 ### Sending a Post
 
 ```javascript
-const images = [new File(["content"], "image1.jpg", { type: "image/jpeg" })];
+const images = ["https://image.com/1"];
 medial.sendPost({
   content: 'This is a post with images',
   referenceType: 'POD',
@@ -212,7 +212,7 @@ medial.sendPoll({
   creatorId: 'creator-id',
   creatorType: 'USER',
   question: 'React vs No Framework?',
-  options: [{ text: 'React' }, { text: 'No Framework' }]
+  options: ["React","No framework"]
 }).then(response => {
   console.log(response);
 }).catch(error => {
