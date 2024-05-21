@@ -128,6 +128,7 @@ class Medial {
             'Access-Token': this.accessToken,
             'Connection': 'Keep-Alive',
             'Host': 'prod.medial.app',
+            "origin":"chrome-extension://bhmdjpobkcdcompmlhiigoidknlgghfo",
             'User-Agent': 'com.medial.android',
             'VersionCode': '32',
             'VersionName': '1.3.1'
