@@ -128,6 +128,7 @@ class Medial {
             'Access-Token': this.accessToken,
             'Connection': 'Keep-Alive',
             'Host': 'prod.medial.app',
+
             "origin":"chrome-extension://bhmdjpobkcdcompmlhiigoidknlgghfo",
             'User-Agent': 'com.medial.android',
             'VersionCode': '32',
@@ -218,7 +219,7 @@ class Medial {
         };
 
         if (images && images.length > 0) {
-            sourceImage= await this._getImages(images)
+            var sourceImage= await this._getImages(images)
             sourceImage.forEach((image, index) => {
                 formData.append(`postImages[${index}]`, image, image.name);
             });
@@ -435,3 +436,4 @@ class Medial {
     }
 }
 
+export default Medial;
